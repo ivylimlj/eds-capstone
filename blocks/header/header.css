@@ -4,6 +4,10 @@ header .nav-wrapper {
   width: 100%;
   z-index: 2;
   position: fixed;
+  box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
+  -webkit-transition: padding-bottom .5s ease, padding-top .5s;
+  -webkit-transition: padding-bottom .5s ease-out, padding-top .5s ease ease-out .25s;
+  transition: padding-bottom .5s ease-out, padding-top .5s ease ease-out .25s;
 }
 
 header nav {
@@ -55,6 +59,18 @@ header nav p {
 
 header nav a:any-link {
   color: currentcolor;
+  padding: 15px 17px;
+  font-weight: initial;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: var(--brandPrimary);
+}
+
+header nav .nav-brand a:hover {
+  background-color: unset;
 }
 
 /* hamburger */
@@ -172,10 +188,12 @@ header nav .nav-sections ul {
   padding-left: 0;
   font-size: var(--body-font-size-s);
   font-weight: 500;
+  justify-content: end;
 }
 
 header nav .nav-sections ul > li {
   font-weight: 700;
+  padding: 10px;
 }
 
 header nav .nav-sections ul > li > ul {
@@ -225,9 +243,8 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections ul {
     display: flex;
-    gap: 2em;
     margin: 0;
-    font-size: var(--body-font-size-xs);
+    font-size: var(--body-font-size-s);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
