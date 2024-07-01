@@ -8,12 +8,31 @@
 }
 
 .cards > ul > li {
-  border: 1px solid var(--dark-color);
   background-color: var(--background-color);
 }
 
-.cards .cards-card-body {
-  margin: 16px;
+.cards .cards-card-body p:not(:first-child) {
+  color: dimgray;
+  display: block;
+  font-size: var(--body-font-size-s);
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 260px;
+}
+
+.cards .cards-card-body .button-container a {
+  color: var(--brandSecondary);
+  font-size: var(--body-font-size-m);
+  border: unset;
+  padding: unset;
+  text-align: unset;
+  font-weight: unset;
+  background-color: unset;
+  margin: unset;
+  white-space: unset;
 }
 
 .cards .cards-card-image {

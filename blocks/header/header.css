@@ -73,6 +73,23 @@ header nav .nav-brand a:hover {
   background-color: unset;
 }
 
+/* button */
+/* buttons */
+header nav a.button:any-link,
+header nav button {
+  font-weight: 600;
+  color: var(--background-color);
+  background-color: var(--brandThird);
+  border-radius: 30px;
+}
+
+header nav a.button:hover,
+header nav a.button:focus,
+header nav button:hover,
+header nav button:focus {
+  background-color: var(--brandPrimary);
+}
+
 /* hamburger */
 header nav .nav-hamburger {
   grid-area: hamburger;

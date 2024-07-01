@@ -13,6 +13,13 @@ export default function decorate(block) {
           picWrapper.classList.add('columns-img-col');
         }
       }
+      const h2 = col.querySelector('h2');
+      if (h2) {
+        const h2Wrapper = h2.closest('div');
+        if (h2Wrapper) {
+          h2Wrapper.classList.add('columns-text-col');
+        }
+      }
     });
   });
 }
