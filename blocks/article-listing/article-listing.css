@@ -1,0 +1,50 @@
+.article-listing > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-gap: 16px;
+}
+
+.article-listing > ul > li {
+  background-color: var(--background-color);
+}
+
+.article-listing .cards-card-body p:not(:first-child) {
+  color: dimgray;
+  display: block;
+  font-size: var(--body-font-size-s);
+  margin-top: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+  width: 260px;
+}
+
+.article-listing .cards-card-body .button-container a {
+  color: var(--brand-secondary);
+  font-size: var(--body-font-size-m);
+  border: unset;
+  padding: unset;
+  text-align: unset;
+  font-weight: unset;
+  background-color: unset;
+  margin: unset;
+  white-space: unset;
+}
+
+.article-listing .cards-card-image {
+  line-height: 0;
+}
+
+.article-listing .cards-card-body > *:first-child {
+  margin-top: 0;
+}
+
+.article-listing > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}

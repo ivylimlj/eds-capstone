@@ -3,7 +3,7 @@ indices:
     include:
       - '/magazine/**'
     exclude:
-      - '/magazine/'
+      - '/magazine'
     target: /query-index
     properties:
       title:
