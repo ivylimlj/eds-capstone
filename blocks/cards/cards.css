@@ -48,3 +48,62 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* about-us */
+.about-us .cards > ul {
+  margin: 0 auto;
+  max-width: 873pt;
+  padding-bottom: 1em;
+  padding-top: .5em;
+  text-align: center;
+}
+
+.about-us .cards img {
+  border-radius: 50%;
+  height: 164px;
+  object-fit: cover;
+  width: 164px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+}
+
+.about-us .cards h3, 
+.about-us .cards h5 {
+  margin-bottom: .25em;
+  margin-top: 0;
+}
+
+.about-us .cards h5 {
+  font-weight: 400;
+}
+
+.about-us .cards .cards-card-body p:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.about-us .cards .cards-card-body a[title*='-icon'] {
+  display: block;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  background-color: var(--brand-secondary);
+  height: 48px;
+  width: 48px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  float:left;
+}
+
+.about-us .cards .cards-card-body a[title='fb-icon'] {
+  background-image: url('../../icons/fb-icon.svg');
+}
+
+.about-us .cards .cards-card-body a[title='twitter-icon'] {
+  background-image: url('../../icons/twitter-icon.svg');
+}
+
+.about-us .cards .cards-card-body a[title='ig-icon'] {
+  background-image: url('../../icons/ig-icon.svg');
+}

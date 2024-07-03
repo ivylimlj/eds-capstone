@@ -108,6 +108,14 @@ h4 { font-size: var(--heading-font-size-m); }
 h5 { font-size: var(--heading-font-size-s); }
 h6 { font-size: var(--heading-font-size-xs); }
 
+h2::after {
+  border-bottom: 2px solid var(--brand-primary);
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+
 p,
 dl,
 ol,
@@ -237,10 +245,19 @@ main .section.highlight {
   background-color: var(--light-color);
 }
 
+/* section metadata - magazine & about-us */
 main .section.magazine p {
   font-size: var(--body-font-size-m);
   line-height: 2.5;
   margin: 0 0 13.5px;
+}
+
+main .section.about-us > div:nth-child(2) > p {
+  font-size: var(--body-font-size-s);
+}
+
+main .section.magazine h2::after {
+  border-bottom: unset;
 }
 
 main .section.author > div {
@@ -267,6 +284,11 @@ main .section.author > div > h2 {
     margin-top: 0;
     padding-top: 2.5rem;
     position: absolute;
+    
+}
+
+main .section.author > div > h2::after {
+  border-bottom: unset;
 }
 
 main .section.author > div > p:nth-child(3) {
