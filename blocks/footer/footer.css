@@ -42,22 +42,22 @@ footer .footer .icon img {
   height: auto;
 }
 
+footer .footer .section {
+  clear: both;
+  padding-top: 30px;
+}
+
 footer .footer .section:first-child {
-  padding-top: 0px;
+  padding-top: unset;
 }
 
 footer .footer .section:first-child p {
   float: left;
-  width: 16.6666666667%;
+  width: 16.6667%;
 }
 
 footer .footer .section:first-child ul {
   float: left;
   display: flex;
   justify-content: space-between;
-}
-
-footer .footer .section {
-  clear: both;
-  padding-top: 30px;
 }

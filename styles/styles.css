@@ -19,13 +19,13 @@
   --dark-color: #ccc;
   --dark-gray-color: #202020;
   --text-color: black;
-  --brandPrimary: #ffea00;
-  --brandSecondary: #202020;
-  --brandThird: #ebebeb;
+  --brand-primary: #ffea00;
+  --brand-secondary: #202020;
+  --brand-third: #ebebeb;
 
   /* fonts */
-  --body-font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
-  --heading-font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+  --body-font-family: "Source Sans Pro","Helvetica Neue",helvetica,arial,sans-serif;
+  --heading-font-family: "Asar", georgia, "Times New Roman", times, serif;
   --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
 
   /* body sizes */
@@ -85,7 +85,7 @@ header {
 h1,
 h2,
 h3 {
-  font-family: wknd-icon-font;
+  font-family: wknd-icon-font, serif;
   font-weight: 400;
   line-height: 1.25;
   margin-top: 1em;
@@ -166,12 +166,12 @@ button {
   font-weight: 600;
   cursor: pointer;
   color: var(--dark-gray-color);
-  background-color: var(--brandPrimary);
+  background-color: var(--brand-primary);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 0px;
+  border-radius: unset;
   text-transform: uppercase;
 }
 
@@ -179,7 +179,7 @@ a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--brandPrimary);
+  background-color: var(--brand-primary);
   cursor: pointer;
 }
 
@@ -241,21 +241,6 @@ main .section.magazine p {
   font-size: var(--body-font-size-m);
   line-height: 2.5;
   margin: 0 0 13.5px;
-  text-align: justify;
-}
-
-main .section.magazine .quote {
-  background-color: var(--brandThird);
-  margin: 1em 0;
-  padding: 1em;
-}
-
-main .section.magazine .quote > div:first-child p {
-  border: none;
-  font-size: var(--heading-font-size-xl);
-  margin: 0 0 .5em;
-  padding: 14px;
-  line-height: 1.5;
 }
 
 main .section.author > div {
@@ -264,13 +249,12 @@ main .section.author > div {
 
 main .section.author > div > p:first-child {
   margin: auto;
-  margin-left: 0px;
+  margin-left: unset;
 }
 
 main .section.author > div > p:first-child img {
   border-radius: 30px;
   height: 60px;
-  -o-object-fit: cover;
   object-fit: cover;
   width: 60px;
 }
@@ -295,5 +279,15 @@ main .section.author > div > p:nth-child(3) {
 }
 
 main .section.author > div > p a.button {
-  background-color: var(--brandSecondary);
+  background-color: var(--brand-secondary);
+}
+
+main .section.magazine .quote {
+  background-color: var(--brand-third);
+  margin: 1em 0;
+  padding: 1em;
+}
+
+main .section.magazine .quote > blockquote > div:first-child p {
+  text-align: center;
 }

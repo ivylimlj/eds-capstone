@@ -24,7 +24,7 @@
 }
 
 .cards .cards-card-body .button-container a {
-  color: var(--brandSecondary);
+  color: var(--brand-secondary);
   font-size: var(--body-font-size-m);
   border: unset;
   padding: unset;

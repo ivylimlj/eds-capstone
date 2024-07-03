@@ -10,11 +10,12 @@
 }
 
 .columns > div > div {
-  order: 1;
+  flex: 1;
+  order: unset;
 }
 
 .columns > div > .columns-text-col {
-  background-color: var(--brandThird);
+  background-color: var(--brand-third);
   padding: 3.5em 2em 2em;
 }
 
@@ -29,7 +30,7 @@
 @media (width >= 900px) {
   .columns > div {
     flex-direction: unset;
-    gap: 0px;
+    gap: unset;
   }
 
   .columns > div > div:first-child {
@@ -37,10 +38,5 @@
     order: unset;
     align-items: stretch;
     display: flex;
-  }
-
-  .columns > div > div {
-    flex: 1;
-    order: unset;
   }
 }
